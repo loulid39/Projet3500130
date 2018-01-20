@@ -1,0 +1,9 @@
+
+<resources>
+    <string name="app_name">Projet-3500130</string>
+    <string name="novice">PLAY NOVICE</string>
+    <string name="medium">PLAY MEDIUM</string>
+    <string name="expert">PLAY EXPERT</string>
+    <string name="stat">STATISTICS</string>
+    <string name="navigation">MAIN NAVIGATION</string>
+</resources>
