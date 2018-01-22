@@ -1,0 +1,421 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:16:1-31:12
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/95cec1797dbb2659250909542fcecb93/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:16:1-47:12
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:5:22-78
+application
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:8:5-30:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.mehellou.projet_3500130.MainActivity
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:17:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.mehellou.projet_3500130.gameActivity
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:24:9-25:25
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:24:19-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:26:9-28:70
+	android:value
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:28:13-68
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:27:13-58
+uses-sdk
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/95cec1797dbb2659250909542fcecb93/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/95cec1797dbb2659250909542fcecb93/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:24:13-51
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:20:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:21:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:26:9-29:64
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:27:13-65
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/AndroidManifest.xml:30:19-91
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:21:9-29:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:23:17-40
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:24:17-63
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:22:17-48
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:25:13-28:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:26:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:26:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:27:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/AndroidManifest.xml:27:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:21:9-24:46
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:23:19-52
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:24:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:22:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:21:19-72
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:28:9-31:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:31:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/AndroidManifest.xml:29:13-62
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/AndroidManifest.xml:21:22-79
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/AndroidManifest.xml:24:8-31
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:24:22-65
+provider#com.google.android.gms.measurement.AppMeasurementContentProvider
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:28:7-31:37
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:29:11-76
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:31:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:30:11-90
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:33:7-39:18
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:35:11-33
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:34:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:36:9-38:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:37:11-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:37:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:41:7-44:37
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:43:11-33
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:44:11-35
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/AndroidManifest.xml:42:11-82
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-8.4.0.aar/1d5bfbef647e5b2960af52196a8a9cbd/AndroidManifest.xml:22:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:26:13-58

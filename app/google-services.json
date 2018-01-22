@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "162759944634",
+    "firebase_url": "https://spry-bus-192811.firebaseio.com",
+    "project_id": "spry-bus-192811",
+    "storage_bucket": "spry-bus-192811.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162759944634:android:e6522183029b3f29",
+        "android_client_info": {
+          "package_name": "com.mehellou.projet_3500130"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162759944634-82ai0q5nl0bjuga7fghpgq5tqeniao56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDUdY2K-MQArpxzwY27U049XEcOq9E0A4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

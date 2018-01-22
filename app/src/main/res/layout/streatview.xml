@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    >
+    <fragment
+        android:id="@+id/str"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"/>
+    <!--class="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    />
+
+</LinearLayout>

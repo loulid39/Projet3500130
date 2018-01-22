@@ -1,0 +1,92 @@
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/firebase-core-9.0.0.aar/bbbb543d8621f5d8b76c3ba8ccea3fd5/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/72931106bdc48d66d47a5f3353d9dc38/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/jars/libs/internal_impl-23.0.0.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/072e2aaa165371bb201e0ade444efe74/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-ads-8.4.0.aar/4998ef5fbaa8bb4104ad4d4b4c085dda/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-analytics-8.4.0.aar/51b64a2e1f1d8f55193f6ccd3988774c/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-gcm-8.4.0.aar/0100136843fa9e18f74d97a621cc8108/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-measurement-8.4.0.aar/46912e6eebc745ee1d897082c3b6b261/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/firebase-analytics-9.0.0.aar/ca8c6cff1b3fdbcaa78659417df14736/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-9.0.0.aar/033a51df4f38461f9a20e555ad4e6787/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.0.0.aar/9fd20e6b36a9ff0706be3ff523a46580/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-8.4.0.aar/fbc345b155bb900313914c525646ea4b/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-8.4.0.aar/8154de6032f112deeb37221b96fcf33b/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-appstate-8.4.0.aar/d11121d052baf6f7e8f0530312802e48/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-auth-8.4.0.aar/6035f0b3cdd672bedba4d32e9bbae92f/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-games-8.4.0.aar/0c3cdafa28d80ecc1958a9d80d3568cb/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-drive-8.4.0.aar/883e90726b3b9eed52d7da6cde4e61ee/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-fitness-8.4.0.aar/319b293e99ce64401899f3758745490c/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wallet-8.4.0.aar/95cec1797dbb2659250909542fcecb93/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-identity-8.4.0.aar/dd3e26de91a82fa72abde3d387417113/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-location-8.4.0.aar/db7410278c0f28983e3c3b57985a17e5/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-maps-8.4.0.aar/38c807cc016f4478341b6ab4bb217d29/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-nearby-8.4.0.aar/f5f1ebf470cb3fce1aabd7c30cc70a8b/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-panorama-8.4.0.aar/bf520c8a302b5df308e7db3cb0c068fd/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-plus-8.4.0.aar/d2d5f912c2cd1161f8bd52f7aacf8808/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-8.4.0.aar/3b7f07d8fa5e926561b9c8679dd38808/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-vision-8.4.0.aar/0662fa3b14ea43bb6c9fd6028ea49d95/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-wearable-8.4.0.aar/7ea225c737690a1b8f32c0bd808fb20a/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/aa10d27120367b009865ebbe696453ed/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/firebase-common-9.0.0.aar/c493a0e36271dba0feb829cfbc5e7223/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.0.0.aar/3e8a8b08658796b76cdef07a85f42bfd/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.0.0.aar/ba87272b90dda7cd784f6c7d154bf062/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b6a2355a554e6be99ca517fa79930851/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/5df8de77d6194f5410389b0b7c4037e6/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/3f25fe8fb9fdddcd0013917c6f7043f4/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/7902dfc7fd2c74249b726d8f0d98d91f/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/076d5b1cf524bdff8f843c925a426be5/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f2600fa205a5d61fba73b73080d1188c/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar(**.class)
+-injars /home/lotfi/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar(**.class)
+-injars /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/jars/classes.jar(**.class)
+-injars /home/lotfi/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar(**.class)
+-injars /home/lotfi/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar(**.class)
+-injars /home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/classes/debug(**.class)
+-outjars /home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /home/lotfi/Android/Sdk/build-tools/26.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/multi-dex/debug/components.flags
+
+
+# Referenced at /home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:30
+-keep class android.support.multidex.MultiDexApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

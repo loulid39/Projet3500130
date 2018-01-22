@@ -1,0 +1,3 @@
+# Referenced at /home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:30
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }
+
