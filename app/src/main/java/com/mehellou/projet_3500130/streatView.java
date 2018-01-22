@@ -1,5 +1,6 @@
 package com.mehellou.projet_3500130;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,7 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 
 public class streatView extends Fragment implements OnStreetViewPanoramaReadyCallback{
-    static final LatLng HAMBURG = new LatLng(53.558, 9.927);
+    static final LatLng HAMBURG = new LatLng(40.780269, -73.961473);
     private StreetViewPanorama panorama;
 
     @Override
@@ -60,8 +61,10 @@ public class streatView extends Fragment implements OnStreetViewPanoramaReadyCal
         builder.zoom( 0.0f );
         builder.bearing( 0.0f );
         panorama.animateTo( builder.build(), 0 );
-        panorama.setPosition( HAMBURG, 300 );
-        panorama.setStreetNamesEnabled( true );
+        }
 
+    public void changePosition(LatLng latLng){
+        panorama.setPosition(latLng, 300);
+        panorama.setStreetNamesEnabled(true);
     }
 }

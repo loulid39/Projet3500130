@@ -1,9 +1,21 @@
 package com.mehellou.projet_3500130;
 
+
+import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
+import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
+import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 //import android.app.Fragment;
+import com.google.android.gms.maps.model.Marker;
+
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.location.Location;
 import android.support.v4.app.Fragment;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,19 +27,45 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+
 /**
  * Created by lotfi on 20/01/18.
  */
 
 public class mapView extends Fragment implements OnMapReadyCallback{
-    static final LatLng HAMBURG = new LatLng(53.558, 9.927);
+    static final LatLng POS = new LatLng(53.558, 9.927);
+    static final LatLng POS1 = new LatLng(40.780269, -73.961473);
+    static final LatLng POS2 = new LatLng(48.858620, 2.293985);
+    static final LatLng POS3 = new LatLng(40.412837, -3.700073);
+
     private GoogleMap map;
+    LatLng currentP = POS;
+    Date date;
+    int nbEssay = 3;
+    streatView fg = null;
+
+    int score = 0;
+    String dat;
+    String level = "";
+
 
     @Override
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
         super.onCreateView(inf,vg, s);
+        level = getActivity().getIntent().getStringExtra("LEVEL");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date date = new Date();
+        dat = dateFormat.format(date);
         return inf.inflate(R.layout.mapview,vg,false);
     }
+
+
 
     @Override
     public void onCreate(Bundle b){
@@ -40,7 +78,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     }
 
     public void initMap(){
-
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
                 .findFragmentById(R.id.map);
         if(mapFragment != null) {
@@ -51,7 +88,107 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
-        map.addMarker(new MarkerOptions().position(HAMBURG));
-        map.moveCamera(CameraUpdateFactory.newLatLng(HAMBURG));
+        map.moveCamera(CameraUpdateFactory.newLatLng(currentP));
+        map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng latLng) {
+                Location la = new Location("A");
+                la.setAltitude(currentP.latitude);
+                la.setLongitude(currentP.longitude);
+                Location lb = new Location("B");
+                lb.setLongitude(latLng.longitude);
+                lb.setAltitude(latLng.latitude);
+                MarkerOptions m =  new MarkerOptions().position(latLng);
+                map.addMarker(m);
+                map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
+                float dis = la.distanceTo(lb);
+                processScore(dis);
+            }
+        });
+        fg = (streatView)getActivity().getSupportFragmentManager().findFragmentByTag("streeatv");
+        fg.changePosition(currentP);
+    }
+
+    public void processScore(float lb){
+        float dist = distToKm(lb);
+        score += getScore(dist);
+        nouvelEssay();
+        fg.changePosition(currentP);
+    }
+
+    public void nouvelEssay(){
+        switch (level){
+            case "medium" : mediumLevel();break;
+            case "novince" : novinceLevel();break;
+            case "expert" : expertLevel();break;
+        }
+    }
+
+    /*A faire [2]*/
+    public void novinceLevel(){
+        if(nbEssay > 0){
+            if(nbEssay == 2) currentP = POS1;
+            if(nbEssay == 1) currentP = POS2;
+            if(nbEssay == 3) currentP = POS3;
+            nbEssay--;
+
+        } else {
+            persist();
+            /*
+            * afficher activité principal (MainAcitivity)
+            * */
+
+        }
+    }
+
+    /*A faire [3]*/
+    public void mediumLevel(){
+        novinceLevel();
+        /*remplacer l'appel de la fct : novinceLevel() par par le traitement de choisir la bonne position selon niveau */
+    }
+
+    /*A faire [4]*/
+    public void expertLevel(){
+        novinceLevel();
+        /*remplacer l'appel de la fct : novinceLevel() par par le traitement de choisir la bonne position selon niveau */
+    }
+
+    public void persist(){
+        File file = new File(getActivity().getApplicationContext().getFilesDir(),"mydir");
+
+        if(!file.exists()){
+            file.mkdir();
+        }
+
+        try{
+            File gpxfile = new File(file, "scoreData.txt");
+            FileWriter writer = new FileWriter(gpxfile,true);
+
+            writer.append(score+"@"+level+"@"+dat+"\n");
+            writer.flush();
+            writer.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    /*A faire [1]*/
+    public float distToKm(float dist){
+        /*
+        1)
+        changer de mettre en kilometre
+        2)
+        afficher un alert qui affiche le nombre des kilomètres (comme dans l'exemple dans le video du prof)
+        */
+        map.clear();
+        return dist;
+    }
+
+    /*A faire [5]*/
+    public int getScore(float dist){
+        /*1) calculer le score
+        * comme tu veux +100 si dist < 300, else +0.5
+        *
+         * */
+        return 102542154;
     }
 }

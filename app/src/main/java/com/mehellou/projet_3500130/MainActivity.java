@@ -20,15 +20,39 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
+
         Button nov = findViewById(R.id.novice);
         nov.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intt = new Intent(getApplicationContext() , gameActivity.class);
                 //intt.putExtra("cle","valeur");
+                intt.putExtra("LEVEL", "novince");
                 startActivity(intt);
             }
         });
+
+        Button med = findViewById(R.id.medium);
+        med.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intt = new Intent(getApplicationContext(), gameActivity.class);
+                intt.putExtra("LEVEL","medium");
+                startActivity(intt);
+            }
+        });
+
+        Button exp = findViewById(R.id.expert);
+        exp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intt = new Intent(getApplicationContext() , gameActivity.class);
+                intt.putExtra("LEVEL","expert");
+                startActivity(intt);
+            }
+        });
+
+
 
         Button scor = findViewById(R.id.stat);
         scor.setOnClickListener(new View.OnClickListener() {
