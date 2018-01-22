@@ -38,6 +38,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.mehellou.projet_3500130.gameActivity" />
+        <activity android:name="com.mehellou.projet_3500130.scoreView" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

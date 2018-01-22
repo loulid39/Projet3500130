@@ -20,6 +20,10 @@
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/res/drawable/common_plus_signin_btn_text_light.xml"
     },
     {
+        "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/layout_scoreview.xml.flat",
+        "source": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/res/layout/scoreview.xml"
+    },
+    {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_plus_signin_btn_text_light_disabled.9.png.flat",
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/aa10d27120367b009865ebbe696453ed/res/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
     },
@@ -2458,6 +2462,10 @@
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_bubble_shadow.9.png.flat",
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.3.4.aar/aaa61b3719a6ea78a2cec93baf1a9745/res/drawable-xxhdpi-v4/bubble_shadow.9.png"
+    },
+    {
+        "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/layout_column_row.xml.flat",
+        "source": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/res/layout/column_row.xml"
     },
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_play_dark.png.flat",

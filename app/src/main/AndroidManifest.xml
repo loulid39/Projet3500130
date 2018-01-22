@@ -21,11 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".gameActivity"
-            ></activity>
+        <activity android:name=".gameActivity"/>
+        <activity android:name=".scoreView"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCCxkWqbr9igHzlNg110sv4b76vEZ66h84"/>
+
 
     </application>
 

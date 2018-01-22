@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:16:1-20:12
 MERGED from [com.google.android.gms:play-services-cast:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-cast-8.4.0.aar/5e58d0f4b5e22ec312031db912706d3d/AndroidManifest.xml:16:1-20:12
@@ -42,20 +42,20 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/lotfi/.gradle/cac
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3415a1c866798a0676d83b451bc839a0/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4938adf9198fbcaf3b542dff7132e07/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
-		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
-		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:2:11-69
@@ -64,7 +64,7 @@ ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidM
 	android:name
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:5:22-78
 application
-ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:8:5-30:19
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:8:5-31:19
 MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:cardview-v7:26.1.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/8de88adbbbbdfb89e4511b215c443901/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services:8.4.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-8.4.0.aar/6fa47ebe4823de558f2ae47fcd2dbedb/AndroidManifest.xml:19:5-20
@@ -164,9 +164,13 @@ ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidM
 	android:name
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:21:27-74
 activity#com.mehellou.projet_3500130.gameActivity
-ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:24:9-25:25
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:24:9-49
 	android:name
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:24:19-47
+activity#com.mehellou.projet_3500130.scoreView
+ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:25:9-46
+	android:name
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:25:19-44
 meta-data#com.google.android.geo.API_KEY
 ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:26:9-28:70
 	android:value

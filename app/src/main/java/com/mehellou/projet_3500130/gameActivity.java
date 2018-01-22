@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 
 public class gameActivity extends AppCompatActivity {
     private String level = "";
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
