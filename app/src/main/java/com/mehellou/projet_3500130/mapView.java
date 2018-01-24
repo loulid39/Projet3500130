@@ -106,16 +106,15 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 map.addMarker(m);
                 map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
                 float dis = la.distanceTo(lb);
-                Log.wtf("OnMapClick", " "+dis);
-                Log.wtf("OnMapClick", "LatLng"+ latLng.toString());
 
+                /*dessine chemin entre deux points*/
                 PolylineOptions pathOptions = new PolylineOptions()
                         .add(latLng)
                         .add(currentP);
-
                 Polyline polyline = map.addPolyline(pathOptions);
+
+                /* appel affichage de la distance + gère si fin de partie*/
                 handlePlayerTurn(dis);
-                //processScore(dis);
             }
         });
         fg = (streatView)getActivity().getSupportFragmentManager().findFragmentByTag("streeatv");
@@ -136,7 +135,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         }
     }
 
-    /*A faire [2]*/
     public void novinceLevel(){
         if(nbEssay > 0){
             if(nbEssay == 2) currentP = POS1;
@@ -146,9 +144,19 @@ public class mapView extends Fragment implements OnMapReadyCallback{
 
         } else {
             persist();
-            /*
-            * afficher activité principal (MainAcitivity)
-            * */
+
+            AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+            //alertDialog.setTitle("Alert");
+            alertDialog.setMessage("Hey, you have " + score + " points \\o/");
+            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                             /* retour à l'accueil*/
+                            getActivity().onBackPressed();
+                        }
+                    });
+            alertDialog.setCancelable(false);
+            alertDialog.show();
         }
     }
 
@@ -204,12 +212,19 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         return dist;
     }
 
-    /*A faire [5]*/
+    /*A faire: sile temps ajouter un affichage temporisé affichant le score ajouté à l'écran
+    * on click (exemple: +100! +200!*/
+    /*dist en km*/
     public int getScore(float dist){
-        /*1) calculer le score
-        * comme tu veux +100 si dist < 300, else +0.5
-        *
-         * */
-        return 102542154;
+          /*Moins de 300m, AMAZING!*/
+        if (dist < 0.3)
+           return 4200;
+       if (dist < 20)
+           return 2000;
+       if (dist <300)
+           return 1000;
+       if (dist < 800)
+            return 500;
+       return (dist < 1200 ) ? 300 : 100 ;
     }
 }
