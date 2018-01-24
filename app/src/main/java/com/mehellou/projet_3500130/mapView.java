@@ -46,12 +46,14 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     static final LatLng POS = new LatLng(53.558, 9.927);
     static final LatLng POS1 = new LatLng(40.780269, -73.961473);
     static final LatLng POS2 = new LatLng(48.858620, 2.293985);
-    static final LatLng POS3 = new LatLng(40.412837, -3.700073);
+    //static final LatLng POS3 = new LatLng(40.412837, -3.700073);
+    static final LatLng POS3 = new LatLng(48.8485461,2.3427929);
+    static final LatLng POS4 = new LatLng(48.8481521,2.3425766);
 
     private GoogleMap map;
     LatLng currentP = POS;
     Date date;
-    int nbEssay = 3;
+    int nbEssay = 4;
     streatView fg = null;
 
     int score = 0;
@@ -140,6 +142,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             if(nbEssay == 2) currentP = POS1;
             if(nbEssay == 1) currentP = POS2;
             if(nbEssay == 3) currentP = POS3;
+            if(nbEssay == 4) currentP = POS4;
             nbEssay--;
 
         } else {

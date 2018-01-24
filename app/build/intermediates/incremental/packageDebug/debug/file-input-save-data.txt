@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Sun Jan 21 20:41:39 CET 2018
+#Wed Jan 24 15:15:46 CET 2018
 0.baseType=DIRECTORY
-0.base=/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/transforms/dexMerger/debug/0
+0.base=/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/transforms/dexMerger/debug/19
 0.path=classes.dex
 0.set=DEX
 count=1
