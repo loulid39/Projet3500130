@@ -16,6 +16,7 @@ import android.support.v4.app.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,10 +27,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -102,7 +106,16 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 map.addMarker(m);
                 map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
                 float dis = la.distanceTo(lb);
-                processScore(dis);
+                Log.wtf("OnMapClick", " "+dis);
+                Log.wtf("OnMapClick", "LatLng"+ latLng.toString());
+
+                PolylineOptions pathOptions = new PolylineOptions()
+                        .add(latLng)
+                        .add(currentP);
+
+                Polyline polyline = map.addPolyline(pathOptions);
+                handlePlayerTurn(dis);
+                //processScore(dis);
             }
         });
         fg = (streatView)getActivity().getSupportFragmentManager().findFragmentByTag("streeatv");
@@ -110,8 +123,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     }
 
     public void processScore(float lb){
-        float dist = distToKm(lb);
-        score += getScore(dist);
+        score += getScore(lb);
         nouvelEssay();
         fg.changePosition(currentP);
     }
@@ -137,7 +149,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             /*
             * afficher activité principal (MainAcitivity)
             * */
-
         }
     }
 
@@ -171,15 +182,25 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             e.printStackTrace();
         }
     }
-    /*A faire [1]*/
-    public float distToKm(float dist){
-        /*
-        1)
-        changer de mettre en kilometre
-        2)
-        afficher un alert qui affiche le nombre des kilomètres (comme dans l'exemple dans le video du prof)
-        */
-        map.clear();
+
+    /* récupère la distance parcourue, l'affiche et gère le score puis lance niveau suivant*/
+    public float handlePlayerTurn(float dist){
+        DecimalFormat df = new DecimalFormat("#.##");
+        final float dis = dist*0.001f;
+
+        AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+        //alertDialog.setTitle("Alert");
+        alertDialog.setMessage("You are " + df.format(dis) + "km away");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        processScore(dis);
+                        map.clear();
+                    }
+                });
+        alertDialog.setCancelable(false);
+        alertDialog.show();
         return dist;
     }
 
