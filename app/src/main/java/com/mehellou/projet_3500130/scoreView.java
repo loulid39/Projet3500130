@@ -4,11 +4,15 @@ import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,12 +34,20 @@ import java.util.Properties;
 public class scoreView extends AppCompatActivity {
     private ArrayList<HashMap<String,String>> list;
 
-     @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scoreview);
 
-        ListView listView = (ListView)findViewById(R.id.listView);
+
+        final ListView listView = (ListView)findViewById(R.id.listView);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                setSortedElements("score");
+            }
+        });
+
         list = new ArrayList<HashMap<String,String>>();
         File file = new File(getApplicationContext().getFilesDir(),"mydir");
         if(!file.exists()){
@@ -60,5 +72,19 @@ public class scoreView extends AppCompatActivity {
         }
         ListViewAdapter adapter = new ListViewAdapter(this, list);
         listView.setAdapter(adapter);
+    }
+
+    public void setSortedElements(String s){
+        switch (s){
+            case "score" : {
+
+            } break;
+            case "date" : {
+
+            } break;
+            case "level":{
+
+            }
+        }
     }
 }

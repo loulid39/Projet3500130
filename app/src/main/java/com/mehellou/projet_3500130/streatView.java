@@ -25,7 +25,7 @@ public class streatView extends Fragment implements OnStreetViewPanoramaReadyCal
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                         Bundle savedInstanceState){
+                             Bundle savedInstanceState){
         super.onCreateView(inflater,container,savedInstanceState);
         final View rootview = inflater.inflate(R.layout.streatview, container, false);
 
@@ -61,7 +61,7 @@ public class streatView extends Fragment implements OnStreetViewPanoramaReadyCal
         builder.zoom( 0.0f );
         builder.bearing( 0.0f );
         panorama.animateTo( builder.build(), 0 );
-        }
+    }
 
     public void changePosition(LatLng latLng){
         panorama.setPosition(latLng, 300);

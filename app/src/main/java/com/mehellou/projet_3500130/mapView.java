@@ -5,6 +5,7 @@ import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 //import android.app.Fragment;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.model.Marker;
 
 import android.app.AlertDialog;
@@ -35,29 +36,35 @@ import java.io.FileWriter;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by lotfi on 20/01/18.
  */
 
 public class mapView extends Fragment implements OnMapReadyCallback{
+
     static final LatLng POS = new LatLng(53.558, 9.927);
     static final LatLng POS1 = new LatLng(40.780269, -73.961473);
     static final LatLng POS2 = new LatLng(48.858620, 2.293985);
-    static final LatLng POS3 = new LatLng(40.412837, -3.700073);
+    static final LatLng POS3 = new LatLng(48.8485461,2.3427929);
+    static final LatLng POS4 = new LatLng(48.8481521,2.3425766);
 
     private GoogleMap map;
     LatLng currentP = POS;
     Date date;
-    int nbEssay = 3;
+    int nbEssay = 4;
     streatView fg = null;
+
 
     int score = 0;
     String dat;
     String level = "";
 
+    CSVHandler csv;
 
     @Override
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
@@ -66,6 +73,9 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
         dat = dateFormat.format(date);
+
+        CSVHandler csv = new CSVHandler(getContext());
+
         return inf.inflate(R.layout.mapview,vg,false);
     }
 
@@ -103,8 +113,15 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 lb.setLongitude(latLng.longitude);
                 lb.setAltitude(latLng.latitude);
                 MarkerOptions m =  new MarkerOptions().position(latLng);
+                MarkerOptions m2 = new MarkerOptions().position(currentP);
                 map.addMarker(m);
-                map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
+                map.addMarker(m2);
+
+                map.moveCamera(CameraUpdateFactory.newLatLng(currentP));
+                CameraUpdate zoom=CameraUpdateFactory.zoomIn();
+                map.animateCamera(zoom,100,null);
+
+
                 float dis = la.distanceTo(lb);
 
                 /*dessine chemin entre deux points*/
@@ -124,7 +141,18 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     public void processScore(float lb){
         score += getScore(lb);
         nouvelEssay();
+
         fg.changePosition(currentP);
+        initState();
+
+    }
+
+    public void initState(){
+        LatLng l = new LatLng(40.585106,25.2025836);
+        map.moveCamera(CameraUpdateFactory.newLatLng(l));
+        CameraUpdate zoom=CameraUpdateFactory.zoomOut();
+
+        map.animateCamera(zoom,10,null);
     }
 
     public void nouvelEssay(){
@@ -140,6 +168,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             if(nbEssay == 2) currentP = POS1;
             if(nbEssay == 1) currentP = POS2;
             if(nbEssay == 3) currentP = POS3;
+            if(nbEssay == 4) currentP = POS4;
             nbEssay--;
 
         } else {
@@ -194,7 +223,8 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     /* récupère la distance parcourue, l'affiche et gère le score puis lance niveau suivant*/
     public float handlePlayerTurn(float dist){
         DecimalFormat df = new DecimalFormat("#.##");
-        final float dis = dist*0.001f;
+        //final float dis = dist*0.001f;
+        final float dis = dist/1000;
 
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
         //alertDialog.setTitle("Alert");
