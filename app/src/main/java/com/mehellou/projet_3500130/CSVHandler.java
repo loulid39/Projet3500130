@@ -83,7 +83,7 @@ public class CSVHandler {
 					String[] row = csvLine.split(",");
 					float rowfloat[] = new float[2];
 					rowfloat[0] = Float.parseFloat(row[0]);
-					rowfloat[1] = Float.parseFloat(row[0]);
+					rowfloat[1] = Float.parseFloat(row[1]);
 					resultList.add(rowfloat);
 				}
 

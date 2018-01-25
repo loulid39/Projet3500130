@@ -1,80 +1,93 @@
-package com.mehellou.projet_3500130;
+       package com.mehellou.projet_3500130;
 
 
-import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
-import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
-import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
+        import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
+        import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
+        import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 //import android.app.Fragment;
-import com.google.android.gms.maps.CameraUpdate;
-import com.google.android.gms.maps.model.Marker;
+        import com.google.android.gms.maps.CameraUpdate;
+        import com.google.android.gms.maps.model.Marker;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.location.Location;
-import android.support.v4.app.Fragment;
+        import android.app.AlertDialog;
+        import android.content.Context;
+        import android.content.DialogInterface;
+        import android.content.Intent;
+        import android.location.Location;
+        import android.support.v4.app.Fragment;
 
-import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+        import android.os.Bundle;
+        import android.support.v4.app.FragmentTransaction;
+        import android.util.Log;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polyline;
-import com.google.android.gms.maps.model.PolylineOptions;
+        import com.google.android.gms.maps.CameraUpdateFactory;
+        import com.google.android.gms.maps.GoogleMap;
+        import com.google.android.gms.maps.OnMapReadyCallback;
+        import com.google.android.gms.maps.SupportMapFragment;
+        import com.google.android.gms.maps.model.LatLng;
+        import com.google.android.gms.maps.model.MarkerOptions;
+        import com.google.android.gms.maps.model.Polyline;
+        import com.google.android.gms.maps.model.PolylineOptions;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.text.DateFormat;
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+        import java.io.File;
+        import java.io.FileWriter;
+        import java.text.DateFormat;
+        import java.text.DecimalFormat;
+        import java.text.SimpleDateFormat;
+        import java.util.ArrayList;
+        import java.util.Date;
+        import java.util.HashMap;
 
 /**
  * Created by lotfi on 20/01/18.
  */
 
 public class mapView extends Fragment implements OnMapReadyCallback{
-
     static final LatLng POS = new LatLng(53.558, 9.927);
     static final LatLng POS1 = new LatLng(40.780269, -73.961473);
     static final LatLng POS2 = new LatLng(48.858620, 2.293985);
+    //static final LatLng POS3 = new LatLng(40.412837, -3.700073);
     static final LatLng POS3 = new LatLng(48.8485461,2.3427929);
     static final LatLng POS4 = new LatLng(48.8481521,2.3425766);
 
-    private ArrayList positions;
-    private CSVHandler csv;
     private GoogleMap map;
     LatLng currentP = POS;
     Date date;
     int nbEssay = 4;
     streatView fg = null;
 
-
     int score = 0;
     String dat;
     String level = "";
+
+    private ArrayList positions;
+    private CSVHandler csv;
+
 
 
     @Override
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
         super.onCreateView(inf,vg, s);
-
-        //level = getActivity().getIntent().getStringExtra("LEVEL");
+        level = getActivity().getIntent().getStringExtra("LEVEL");
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
         dat = dateFormat.format(date);
+
+        csv = new CSVHandler(getContext());
+        if (nbEssay == 4){
+            initPositions();
+            //lvlHandler();
+            float[] pos= (float[])positions.get(nbEssay-1);
+            currentP = new LatLng(pos[0],pos[1]);
+
+            for (int i = nbEssay ; i > 0; i--){
+                float[] pos2= (float[])positions.get(i-1);
+                Log.wtf("mapView",pos2[0] + " " + pos2[1]);
+            }
+        }
+
 
         return inf.inflate(R.layout.mapview,vg,false);
     }
@@ -84,12 +97,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     @Override
     public void onCreate(Bundle b){
         super.onCreate(b);
-        level = getActivity().getIntent().getStringExtra("LEVEL");
-       csv = new CSVHandler(getContext());
-        if (nbEssay == 4){
-            initPositions();
-            lvlHandler();
-        }
     }
 
     public void onStart(){
@@ -123,9 +130,11 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 map.addMarker(m);
                 map.addMarker(m2);
 
+                // map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(currentP));
                 CameraUpdate zoom=CameraUpdateFactory.zoomIn();
                 map.animateCamera(zoom,100,null);
+
 
 
                 float dis = la.distanceTo(lb);
@@ -146,11 +155,19 @@ public class mapView extends Fragment implements OnMapReadyCallback{
 
     public void processScore(float lb){
         score += getScore(lb);
-        //nouvelEssay();
-        lvlHandler();
+        nouvelEssay();
+
+        //lvlHandler();
         fg.changePosition(currentP);
         initState();
+    }
 
+    public void initState(){
+        LatLng l = new LatLng(40.585106,25.2025836);
+        map.moveCamera(CameraUpdateFactory.newLatLng(l));
+        CameraUpdate zoom=CameraUpdateFactory.zoomOut();
+
+        map.animateCamera(zoom,10,null);
     }
 
     /*
@@ -165,13 +182,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         }
     }
 
-    public void initState(){
-        LatLng l = new LatLng(40.585106,25.2025836);
-        map.moveCamera(CameraUpdateFactory.newLatLng(l));
-        CameraUpdate zoom=CameraUpdateFactory.zoomOut();
-
-        map.animateCamera(zoom,10,null);
-    }
 
     public void nouvelEssay(){
         switch (level){
@@ -206,12 +216,9 @@ public class mapView extends Fragment implements OnMapReadyCallback{
 
     }
 
+
+
     public void novinceLevel(){
-
-            positions = csv.getRandom(CSVHandler.fileName.WORLD,5);
-            float[] tmp = (float[])positions.get(0);
-            Log.wtf("novice", tmp[0]+"");
-
         if(nbEssay > 0){
             if(nbEssay == 2) currentP = POS1;
             if(nbEssay == 1) currentP = POS2;
@@ -274,11 +281,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         //final float dis = dist*0.001f;
         final float dis = dist/1000;
 
-        if (csv == null)
-            Log.wtf("HandlePlayer","csv est null");
-        else
-            Log.wtf("HandlePlayer","csv est pas null");
-
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
         //alertDialog.setTitle("Alert");
         alertDialog.setMessage("You are " + df.format(dis) + "km away");
@@ -301,13 +303,13 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     public int getScore(float dist){
           /*Moins de 300m, AMAZING!*/
         if (dist < 0.3)
-           return 4200;
-       if (dist < 20)
-           return 2000;
-       if (dist <300)
-           return 1000;
-       if (dist < 800)
+            return 4200;
+        if (dist < 20)
+            return 2000;
+        if (dist <300)
+            return 1000;
+        if (dist < 800)
             return 500;
-       return (dist < 1200 ) ? 300 : 100 ;
+        return (dist < 1200 ) ? 300 : 100 ;
     }
 }
