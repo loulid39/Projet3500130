@@ -5,6 +5,7 @@ import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 //import android.app.Fragment;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.model.Marker;
 
 import android.app.AlertDialog;
@@ -105,8 +106,17 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 lb.setLongitude(latLng.longitude);
                 lb.setAltitude(latLng.latitude);
                 MarkerOptions m =  new MarkerOptions().position(latLng);
+                MarkerOptions m2 = new MarkerOptions().position(currentP);
                 map.addMarker(m);
-                map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
+                map.addMarker(m2);
+
+               // map.moveCamera((CameraUpdateFactory.newLatLng(latLng)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(currentP));
+                CameraUpdate zoom=CameraUpdateFactory.zoomIn();
+                map.animateCamera(zoom,100,null);
+
+
+
                 float dis = la.distanceTo(lb);
 
                 /*dessine chemin entre deux points*/
@@ -126,7 +136,17 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     public void processScore(float lb){
         score += getScore(lb);
         nouvelEssay();
+
         fg.changePosition(currentP);
+        initState();
+    }
+
+    public void initState(){
+        LatLng l = new LatLng(40.585106,25.2025836);
+        map.moveCamera(CameraUpdateFactory.newLatLng(l));
+        CameraUpdate zoom=CameraUpdateFactory.zoomOut();
+
+        map.animateCamera(zoom,10,null);
     }
 
     public void nouvelEssay(){
@@ -197,7 +217,8 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     /* récupère la distance parcourue, l'affiche et gère le score puis lance niveau suivant*/
     public float handlePlayerTurn(float dist){
         DecimalFormat df = new DecimalFormat("#.##");
-        final float dis = dist*0.001f;
+        //final float dis = dist*0.001f;
+        final float dis = dist/1000;
 
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
         //alertDialog.setTitle("Alert");

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class ListViewAdapter extends BaseAdapter {
     TextView txtFirst;
     TextView txtSecond;
     TextView txtThird;
+    Button b1;
 
 
     public ListViewAdapter(Activity activity, ArrayList<HashMap<String,String>> l){
@@ -29,6 +31,8 @@ public class ListViewAdapter extends BaseAdapter {
         this.activity = activity;
         this.list = l;
     }
+
+
 
     @Override
     public int getCount() {

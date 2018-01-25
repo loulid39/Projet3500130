@@ -139,6 +139,8 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb06e60e6ce5ae5c8fd830bbd095e8c1/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:11:9-32
 	android:roundIcon
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
@@ -146,7 +148,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/tr
 	android:allowBackup
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:14:9-59
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.mehellou.projet_3500130.MainActivity
 ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:17:9-23:20
 	android:name

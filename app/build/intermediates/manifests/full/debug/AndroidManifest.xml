@@ -25,10 +25,11 @@
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="bla bla"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/AppTheme" >
         <activity android:name="com.mehellou.projet_3500130.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
