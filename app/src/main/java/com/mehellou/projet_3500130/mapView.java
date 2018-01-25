@@ -53,6 +53,8 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     static final LatLng POS3 = new LatLng(48.8485461,2.3427929);
     static final LatLng POS4 = new LatLng(48.8481521,2.3425766);
 
+    private ArrayList positions;
+    private CSVHandler csv;
     private GoogleMap map;
     LatLng currentP = POS;
     Date date;
@@ -64,17 +66,15 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     String dat;
     String level = "";
 
-    CSVHandler csv;
 
     @Override
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
         super.onCreateView(inf,vg, s);
-        level = getActivity().getIntent().getStringExtra("LEVEL");
+
+        //level = getActivity().getIntent().getStringExtra("LEVEL");
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
         dat = dateFormat.format(date);
-
-        CSVHandler csv = new CSVHandler(getContext());
 
         return inf.inflate(R.layout.mapview,vg,false);
     }
@@ -84,6 +84,12 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     @Override
     public void onCreate(Bundle b){
         super.onCreate(b);
+        level = getActivity().getIntent().getStringExtra("LEVEL");
+       csv = new CSVHandler(getContext());
+        if (nbEssay == 4){
+            initPositions();
+            lvlHandler();
+        }
     }
 
     public void onStart(){
@@ -140,11 +146,23 @@ public class mapView extends Fragment implements OnMapReadyCallback{
 
     public void processScore(float lb){
         score += getScore(lb);
-        nouvelEssay();
-
+        //nouvelEssay();
+        lvlHandler();
         fg.changePosition(currentP);
         initState();
 
+    }
+
+    /*
+    * TODO: rajouter une catégorie expert
+     */
+    public void initPositions(){
+        switch (level){
+            case "medium" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbEssay);break;
+            case "novince" : positions = csv.getRandom(CSVHandler.fileName.CAPITAL,nbEssay);break;
+            case "expert" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbEssay);break;
+            default: Log.wtf("mapView","ERROR, this level doesn't exist");
+        }
     }
 
     public void initState(){
@@ -163,7 +181,37 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         }
     }
 
+    public void lvlHandler(){
+        if (nbEssay > 0){
+            float[] pos= (float[])positions.get(nbEssay-1);
+            currentP = new LatLng(pos[0],pos[1]);
+            nbEssay--;
+        }
+        else {
+            persist();
+
+            AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+            //alertDialog.setTitle("Alert");
+            alertDialog.setMessage("Hey, you have " + score + " points \\o/");
+            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                             /* retour à l'accueil*/
+                            getActivity().onBackPressed();
+                        }
+                    });
+            alertDialog.setCancelable(false);
+            alertDialog.show();
+        }
+
+    }
+
     public void novinceLevel(){
+
+            positions = csv.getRandom(CSVHandler.fileName.WORLD,5);
+            float[] tmp = (float[])positions.get(0);
+            Log.wtf("novice", tmp[0]+"");
+
         if(nbEssay > 0){
             if(nbEssay == 2) currentP = POS1;
             if(nbEssay == 1) currentP = POS2;
@@ -225,6 +273,11 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         DecimalFormat df = new DecimalFormat("#.##");
         //final float dis = dist*0.001f;
         final float dis = dist/1000;
+
+        if (csv == null)
+            Log.wtf("HandlePlayer","csv est null");
+        else
+            Log.wtf("HandlePlayer","csv est pas null");
 
         AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
         //alertDialog.setTitle("Alert");
