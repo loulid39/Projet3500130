@@ -81,7 +81,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             //lvlHandler();
             float[] pos= (float[])positions.get(nbEssay-1);
             currentP = new LatLng(pos[0],pos[1]);
-
+            Log.wtf("mapVIew",currentP.toString());
             for (int i = nbEssay ; i > 0; i--){
                 float[] pos2= (float[])positions.get(i-1);
                 Log.wtf("mapView",pos2[0] + " " + pos2[1]);
@@ -157,7 +157,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         score += getScore(lb);
         nouvelEssay();
 
-        //lvlHandler();
+        lvlHandler();
         fg.changePosition(currentP);
         initState();
     }

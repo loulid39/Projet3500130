@@ -58,7 +58,7 @@ public class CSVHandler {
 		public ArrayList getRandom(fileName f, int nbvalues){
 			InputStream inputStream;
 			switch (f) {
-				case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.worldcities);
+				case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.capital);
 					break;
 				case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
 					break;
