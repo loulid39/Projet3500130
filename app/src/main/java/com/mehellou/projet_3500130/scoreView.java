@@ -4,6 +4,7 @@ import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
 import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -37,14 +38,24 @@ public class scoreView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.scoreview);
+
 
 
         final ListView listView = (ListView)findViewById(R.id.listView);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                setSortedElements("score");
+                //setSortedElements("score");
+                HashMap<String,String> el = list.get(i);
+                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                String shareBody = "With level "+ el.get(SECOND_COLUMN)+" I get "+el.get(FIRST_COLUMN)+" points";
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, ":-Kiss My Place-:");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                startActivity(Intent.createChooser(sharingIntent, "Share via"));
+
             }
         });
 

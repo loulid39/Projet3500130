@@ -41,6 +41,7 @@ public class streatView extends Fragment implements OnStreetViewPanoramaReadyCal
     @Override
     public void onCreate(Bundle b){
         super.onCreate(b);
+        setRetainInstance(true);
     }
 
     @Override

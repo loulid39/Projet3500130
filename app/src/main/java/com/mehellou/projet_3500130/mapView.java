@@ -97,6 +97,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     @Override
     public void onCreate(Bundle b){
         super.onCreate(b);
+        setRetainInstance(true);
     }
 
     public void onStart(){
