@@ -55,6 +55,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     int score = 0;
     String dat;
     String level = "";
+    Boolean reverse;
 
     private ArrayList positions;
     private CSVHandler csv;
@@ -65,6 +66,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
         super.onCreateView(inf,vg, s);
         level = getActivity().getIntent().getStringExtra("LEVEL");
+        reverse = getActivity().getIntent().getBooleanExtra("REVERSE", false);
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
         dat = dateFormat.format(date);
@@ -236,19 +238,37 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         return dist;
     }
 
-    /*A faire: sile temps ajouter un affichage temporisé affichant le score ajouté à l'écran
-    * on click (exemple: +100! +200!*/
-    /*dist en km*/
+
+    /*
+    * Calcul du score final en fonction du mode de jeu
+    *dist en km
+    * */
     public int getScore(float dist){
-          /*Moins de 300m, AMAZING!*/
-        if (dist < 0.3)
-            return 4200;
-        if (dist < 20)
-            return 2000;
-        if (dist <300)
-            return 1000;
-        if (dist < 800)
-            return 500;
-        return (dist < 1200 ) ? 300 : 100 ;
+        
+        if (!reverse){
+              /*Moins de 300m, AMAZING!*/
+            if (dist < 0.3)
+                return 4200;
+            if (dist < 20)
+                return 2000;
+            if (dist <300)
+                return 1000;
+            if (dist < 800)
+                return 500;
+            return (dist < 1200 ) ? 300 : 100 ;
+        }
+        else{
+            /* si on veut être le plus loin possible de l'endroit cherché*/
+            if (dist > 1200)
+                return 4200;
+            if (dist >800)
+                return 2000;
+            if (dist >300)
+                return 1000;
+            if (dist >150)
+                return 500;
+            return (dist > 30 ) ? 300 : 100 ;
+        }
+
     }
 }

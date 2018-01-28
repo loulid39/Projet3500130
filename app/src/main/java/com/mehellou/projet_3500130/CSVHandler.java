@@ -42,7 +42,10 @@ public class CSVHandler {
 		final Random random = new Random();
 		final Set<Integer> intSet = new HashSet<>();
 		while (intSet.size() < nbvalues) {
-			intSet.add(random.nextInt(nblines-1) + 1);
+			int rand = random.nextInt(nblines);
+			if (rand > 1 && rand <= nblines){
+				intSet.add(rand);
+			}
 		}
 		final int[] ints = new int[intSet.size()];
 		final Iterator<Integer> iter = intSet.iterator();
@@ -66,7 +69,7 @@ public class CSVHandler {
 		}
 
 			/*les lignes sont comptées à partir de 1 et la première contient le nb de lignes*/
-		int line = 2;
+		int line = 1;
 		int j= 0;
 		ArrayList resultList = new ArrayList();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));

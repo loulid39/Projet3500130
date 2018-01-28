@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        final Switch rev = findViewById(R.id.reverse);
+
         Button nov = findViewById(R.id.novice);
         nov.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intt = new Intent(getApplicationContext() , gameActivity.class);
                 //intt.putExtra("cle","valeur");
                 intt.putExtra("LEVEL", "novince");
+                intt.putExtra("REVERSE",rev.isChecked());
                 startActivity(intt);
             }
         });
@@ -39,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intt = new Intent(getApplicationContext(), gameActivity.class);
                 intt.putExtra("LEVEL","medium");
+                intt.putExtra("REVERSE",rev.isChecked());
                 startActivity(intt);
             }
         });
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intt = new Intent(getApplicationContext() , gameActivity.class);
                 intt.putExtra("LEVEL","expert");
+                intt.putExtra("REVERSE",rev.isChecked());
                 startActivity(intt);
             }
         });
