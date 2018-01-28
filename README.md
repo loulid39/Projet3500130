@@ -56,21 +56,20 @@ Gère l'affichage des scores
 
 Initialise la vue Google Street
 
-
 ## Partie Obligatoire
 
-[x] Affichage de l'écran d'accueil
-[x] Affichage de la carte et du street view
-[x] Affichage d'un trait entre la position pointée et celle réelle
-[x] Affichage des statistiques
-[x] Notifications informant l'utilisateur de ce que l'on est en train de faire (distances et scores)
+- [x] Affichage de l'écran d'accueil
+- [x] Affichage de la carte et du street view
+- [x] Affichage d'un trait entre la position pointée et celle réelle
+- [x] Affichage des statistiques
+- [x] Notifications informant l'utilisateur de ce que l'on est en train de faire (distances et scores)
 
 ## Options
 
-[x] Rotation des écrans
-[x] Persistence durable
-[x] Partage du score
-[x] Mode de jeu inversé
+- [x] Rotation des écrans
+- [x] Persistence durable
+- [x] Partage du score
+- [x] Mode de jeu inversé
 
 ## Difficultés rencontrées
 
