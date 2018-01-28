@@ -1,28 +1,22 @@
 package com.mehellou.projet_3500130;
 
-import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnStreetViewPanoramaReadyCallback;
 import com.google.android.gms.maps.StreetViewPanorama;
 import com.google.android.gms.maps.SupportStreetViewPanoramaFragment;
 import com.google.android.gms.maps.model.StreetViewPanoramaCamera;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
  * Created by lotfi on 20/01/18.
  */
 
-public class streatView extends Fragment implements OnStreetViewPanoramaReadyCallback{
+public class streetView extends Fragment implements OnStreetViewPanoramaReadyCallback{
     static final LatLng HAMBURG = new LatLng(40.780269, -73.961473);
     private StreetViewPanorama panorama;
 
@@ -30,7 +24,7 @@ public class streatView extends Fragment implements OnStreetViewPanoramaReadyCal
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
         super.onCreateView(inflater,container,savedInstanceState);
-        final View rootview = inflater.inflate(R.layout.streatview, container, false);
+        final View rootview = inflater.inflate(R.layout.streetview, container, false);
 
         SupportStreetViewPanoramaFragment sfrag = (SupportStreetViewPanoramaFragment)getChildFragmentManager().findFragmentById(R.id.str);
         if(sfrag != null) {

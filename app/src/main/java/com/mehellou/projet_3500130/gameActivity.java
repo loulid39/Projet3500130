@@ -2,9 +2,7 @@ package com.mehellou.projet_3500130;
 
 //import android.app.FragmentTransaction;
 //import android.app.FragmentTransaction;
-import android.app.Activity;
 import android.os.*;
-import android.view.*;
 import android.support.v4.app.FragmentTransaction;
 
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +21,7 @@ public class gameActivity extends AppCompatActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         mapView mv = new mapView();
         ft.add(R.id.containerf2,mv,"mapv");
-        streatView st = new streatView();
+        streetView st = new streetView();
         ft.add(R.id.containerf1, st,"streeatv");
         ft.commit();
     }

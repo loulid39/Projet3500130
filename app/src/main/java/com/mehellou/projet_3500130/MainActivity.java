@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intt = new Intent(getApplicationContext() , gameActivity.class);
                 //intt.putExtra("cle","valeur");
-                intt.putExtra("LEVEL", "novince");
+                intt.putExtra("LEVEL", "novice");
                 intt.putExtra("REVERSE",rev.isChecked());
                 startActivity(intt);
             }

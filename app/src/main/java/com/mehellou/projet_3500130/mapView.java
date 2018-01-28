@@ -30,7 +30,6 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  * Created by lotfi on 20/01/18.
@@ -41,8 +40,8 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     private GoogleMap map;
     LatLng currentP;
     Date date;
-    int nbEssay = 4;
-    streatView fg = null;
+    int nbTurn = 4;
+    streetView fg = null;
 
     int score = 0;
     String dat;
@@ -66,7 +65,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         dat = dateFormat.format(date);
 
         csv = new CSVHandler(getContext());
-        if (nbEssay == 4){
+        if (nbTurn == 4){
             initPositions();
             lvlHandler();
         }
@@ -136,7 +135,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
                 handlePlayerTurn(dis);
             }
         });
-        fg = (streatView)getActivity().getSupportFragmentManager().findFragmentByTag("streeatv");
+        fg = (streetView)getActivity().getSupportFragmentManager().findFragmentByTag("streeatv");
         fg.changePosition(currentP);
     }
 
@@ -163,9 +162,9 @@ public class mapView extends Fragment implements OnMapReadyCallback{
      */
     public void initPositions(){
         switch (level){
-            case "medium" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbEssay);break;
-            case "novince" : positions = csv.getRandom(CSVHandler.fileName.CAPITAL,nbEssay);break;
-            case "expert" : positions = csv.getRandom(CSVHandler.fileName.BATIMENT,nbEssay);break;
+            case "medium" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbTurn);break;
+            case "novice" : positions = csv.getRandom(CSVHandler.fileName.CAPITAL,nbTurn);break;
+            case "expert" : positions = csv.getRandom(CSVHandler.fileName.BATIMENT,nbTurn);break;
             default: Log.wtf("mapView","ERROR, this level doesn't exist");
         }
     }
@@ -176,10 +175,10 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     * si jamais c'est la fin du jeu, enregistre les scores pour les statistiques
      */
     public void lvlHandler(){
-        if (nbEssay > 0){
-            float[] pos= (float[])positions.get(nbEssay-1);
+        if (nbTurn > 0){
+            float[] pos= (float[])positions.get(nbTurn-1);
             currentP = new LatLng(pos[0],pos[1]);
-            nbEssay--;
+            nbTurn--;
         }
         else {
             persist();
