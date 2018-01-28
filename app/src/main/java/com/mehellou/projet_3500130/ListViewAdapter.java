@@ -1,8 +1,6 @@
 package com.mehellou.projet_3500130;
 
 import android.app.Activity;
-import android.support.annotation.Nullable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
