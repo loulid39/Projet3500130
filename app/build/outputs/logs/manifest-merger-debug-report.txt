@@ -140,7 +140,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/lotfi/.gradle/caches/tr
 	android:supportsRtl
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:11:9-32
 	android:roundIcon
 		ADDED from /home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
