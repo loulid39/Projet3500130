@@ -23,127 +23,127 @@ import java.util.Set;
  */
 /* Attention! Le chargement des csv est lourd donc créer le moins possible d'instances de CSVHandler*/
 public class CSVHandler {
-		public enum fileName{CAPITAL, WORLD};
-		private Context context;
+	public enum fileName{CAPITAL, WORLD};
+	private Context context;
 
-		private List capital = new ArrayList();
-		private List world = new ArrayList();
+	private List capital = new ArrayList();
+	private List world = new ArrayList();
 
-		public CSVHandler(Context current){
-			super();
-			this.context = current;
+	public CSVHandler(Context current){
+		super();
+		this.context = current;
+	}
+
+	/*
+	* nbValues: nombre de valeurs à renvoyer
+	* range: sur combien de valeurs il faut random
+	 */
+	public int[] randomValues(int nbvalues, int nblines){
+		final Random random = new Random();
+		final Set<Integer> intSet = new HashSet<>();
+		while (intSet.size() < nbvalues) {
+			intSet.add(random.nextInt(nblines-1) + 1);
 		}
-
-		/*
-		* nbValues: nombre de valeurs à renvoyer
-		* range: sur combien de valeurs il faut random
-		 */
-		public int[] randomValues(int nbvalues, int nblines){
-			final Random random = new Random();
-			final Set<Integer> intSet = new HashSet<>();
-			while (intSet.size() < nbvalues) {
-				intSet.add(random.nextInt(nblines-1) + 1);
-			}
-			final int[] ints = new int[intSet.size()];
-			final Iterator<Integer> iter = intSet.iterator();
-			for (int i = 0; iter.hasNext(); ++i) {
-				ints[i] = iter.next();
-			}
-			Arrays.sort(ints);
-			return ints;
+		final int[] ints = new int[intSet.size()];
+		final Iterator<Integer> iter = intSet.iterator();
+		for (int i = 0; iter.hasNext(); ++i) {
+			ints[i] = iter.next();
 		}
+		Arrays.sort(ints);
+		return ints;
+	}
 
-		/*
-		* */
-		public ArrayList getRandom(fileName f, int nbvalues){
-			InputStream inputStream;
-			switch (f) {
-				case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.capital);
-					break;
-				case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
-					break;
-				default: return null;
-			}
+	/*
+	* */
+	public ArrayList getRandom(fileName f, int nbvalues){
+		InputStream inputStream;
+		switch (f) {
+			case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.capital);
+				break;
+			case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
+				break;
+			default: return null;
+		}
 
 			/*les lignes sont comptées à partir de 1 et la première contient le nb de lignes*/
-			int line = 2;
-			int j= 0;
-			ArrayList resultList = new ArrayList();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-			try {
+		int line = 2;
+		int j= 0;
+		ArrayList resultList = new ArrayList();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+		try {
 				/* par convention, la première ligne contient le nombre de lignes total du fichier*/
-				String csvLine =  reader.readLine();
-				int[] randomLines = randomValues(nbvalues, Integer.parseInt(csvLine));
+			String csvLine =  reader.readLine();
+			int[] randomLines = randomValues(nbvalues, Integer.parseInt(csvLine));
 
-				for (int i=0; i<nbvalues; i++){
-					while(line != randomLines[i]){
-						csvLine = reader.readLine();
-						line++;
-					}
-					String[] row = csvLine.split(",");
-					float rowfloat[] = new float[2];
-					rowfloat[0] = Float.parseFloat(row[0]);
-					rowfloat[1] = Float.parseFloat(row[1]);
-					resultList.add(rowfloat);
+			for (int i=0; i<nbvalues; i++){
+				while(line != randomLines[i]){
+					csvLine = reader.readLine();
+					line++;
 				}
+				String[] row = csvLine.split(",");
+				float rowfloat[] = new float[2];
+				rowfloat[0] = Float.parseFloat(row[0]);
+				rowfloat[1] = Float.parseFloat(row[1]);
+				resultList.add(rowfloat);
+			}
 
-			}
-			catch (IOException ex) {
-				throw new RuntimeException("Error in reading CSV file: "+ex);
-			}
-			finally {
-				try {
-					inputStream.close();
-				}
-				catch (IOException e) {
-					throw new RuntimeException("Error while closing input stream: "+e);
-				}
-			}
-			return resultList;
 		}
-
-		public List get(fileName f){
-			InputStream inputStream;
-			switch (f) {
-				case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.worldcities);
-					break;
-				case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
-					break;
-				default: return null;
-			}
-
-			List resultList = new ArrayList();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+		catch (IOException ex) {
+			throw new RuntimeException("Error in reading CSV file: "+ex);
+		}
+		finally {
 			try {
-				String csvLine;
-				while ((csvLine = reader.readLine()) != null) {
-					String[] row = csvLine.split(",");
-					float rowfloat[] = new float[2];
-					rowfloat[0] = Float.parseFloat(row[0]);
-					rowfloat[1] = Float.parseFloat(row[0]);
-					resultList.add(rowfloat);
-				}
+				inputStream.close();
 			}
-			catch (IOException ex) {
-				throw new RuntimeException("Error in reading CSV file: "+ex);
+			catch (IOException e) {
+				throw new RuntimeException("Error while closing input stream: "+e);
 			}
-			finally {
-				try {
-					inputStream.close();
-				}
-				catch (IOException e) {
-					throw new RuntimeException("Error while closing input stream: "+e);
-				}
-			}
-			return resultList;
 		}
+		return resultList;
+	}
+
+	public List get(fileName f){
+		InputStream inputStream;
+		switch (f) {
+			case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.worldcities);
+				break;
+			case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
+				break;
+			default: return null;
+		}
+
+		List resultList = new ArrayList();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+		try {
+			String csvLine;
+			while ((csvLine = reader.readLine()) != null) {
+				String[] row = csvLine.split(",");
+				float rowfloat[] = new float[2];
+				rowfloat[0] = Float.parseFloat(row[0]);
+				rowfloat[1] = Float.parseFloat(row[0]);
+				resultList.add(rowfloat);
+			}
+		}
+		catch (IOException ex) {
+			throw new RuntimeException("Error in reading CSV file: "+ex);
+		}
+		finally {
+			try {
+				inputStream.close();
+			}
+			catch (IOException e) {
+				throw new RuntimeException("Error while closing input stream: "+e);
+			}
+		}
+		return resultList;
+	}
 
 	public List getWorld() {
 		return world;
 	}
 
 	public void setWorld() {
-			if (world.size() <= 0)this.world = get(fileName.WORLD);
+		if (world.size() <= 0)this.world = get(fileName.WORLD);
 	}
 
 	public List getCapital() {
@@ -152,7 +152,7 @@ public class CSVHandler {
 
 	public void setCapital(List CAPITAL) {
 
-			if (capital.size() <= 0) this.capital = get(fileName.CAPITAL);
+		if (capital.size() <= 0) this.capital = get(fileName.CAPITAL);
 	}
 
-	}
+}
