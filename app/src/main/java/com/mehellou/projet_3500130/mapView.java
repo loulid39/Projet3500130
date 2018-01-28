@@ -1,22 +1,14 @@
 package com.mehellou.projet_3500130;
 
 
-import static com.mehellou.projet_3500130.ConstantStat.FIRST_COLUMN;
-import static com.mehellou.projet_3500130.ConstantStat.SECOND_COLUMN;
-import static com.mehellou.projet_3500130.ConstantStat.THIRD_COLUMN;
-//import android.app.Fragment;
 import com.google.android.gms.maps.CameraUpdate;
-import com.google.android.gms.maps.model.Marker;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.location.Location;
 import android.support.v4.app.Fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,7 +53,9 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     private CSVHandler csv;
 
 
-
+    /*
+    * Récupère le niveau joué et les options, initialisation des coordonnées à trouver
+    */
     @Override
     public View onCreateView(LayoutInflater inf, ViewGroup vg , Bundle s){
         super.onCreateView(inf,vg, s);
@@ -100,6 +94,11 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         }
     }
 
+    /*
+    * A chaque click sur la map, affiche le lieu cliqué, le lieu à trouver et trace un trait
+    * entre les deux.
+    * Appelle la fonction de score + tour suivant
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
@@ -141,15 +140,16 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         fg.changePosition(currentP);
     }
 
+    /* gère le score et initialise la prochaine position à jouer*/
     public void processScore(float lb){
         score += getScore(lb);
-        //nouvelEssay();
 
         lvlHandler();
         fg.changePosition(currentP);
         initState();
     }
 
+    /* gestion de la camera*/
     public void initState(){
         LatLng l = new LatLng(40.585106,25.2025836);
         map.moveCamera(CameraUpdateFactory.newLatLng(l));
@@ -159,18 +159,22 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     }
 
     /*
-    * TODO: rajouter une catégorie expert
+    * initialise le set de positions en fonction du niveau de jeu
      */
     public void initPositions(){
         switch (level){
             case "medium" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbEssay);break;
             case "novince" : positions = csv.getRandom(CSVHandler.fileName.CAPITAL,nbEssay);break;
-            case "expert" : positions = csv.getRandom(CSVHandler.fileName.WORLD,nbEssay);break;
+            case "expert" : positions = csv.getRandom(CSVHandler.fileName.BATIMENT,nbEssay);break;
             default: Log.wtf("mapView","ERROR, this level doesn't exist");
         }
     }
 
 
+    /*
+    * gère combien de tours il reste au joueur
+    * si jamais c'est la fin du jeu, enregistre les scores pour les statistiques
+     */
     public void lvlHandler(){
         if (nbEssay > 0){
             float[] pos= (float[])positions.get(nbEssay-1);
@@ -181,7 +185,6 @@ public class mapView extends Fragment implements OnMapReadyCallback{
             persist();
 
             AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
-            //alertDialog.setTitle("Alert");
             alertDialog.setMessage("Hey, you have " + score + " points \\o/");
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                     new DialogInterface.OnClickListener() {
@@ -197,6 +200,9 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     }
 
 
+    /*
+    * gère l'enregistrement persistant des scores
+     */
     public void persist(){
         File file = new File(getActivity().getApplicationContext().getFilesDir(),"mydir");
 
@@ -244,7 +250,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
     *dist en km
     * */
     public int getScore(float dist){
-        
+
         if (!reverse){
               /*Moins de 300m, AMAZING!*/
             if (dist < 0.3)

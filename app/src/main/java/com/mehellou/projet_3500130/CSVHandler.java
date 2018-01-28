@@ -1,10 +1,6 @@
 package com.mehellou.projet_3500130;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,13 +17,11 @@ import java.util.Set;
 /**
  * Created by carre on 24/01/18.
  */
-/* Attention! Le chargement des csv est lourd donc créer le moins possible d'instances de CSVHandler*/
+
 public class CSVHandler {
-	public enum fileName{CAPITAL, WORLD};
+	public enum fileName{CAPITAL, WORLD, BATIMENT};
 	private Context context;
 
-	private List capital = new ArrayList();
-	private List world = new ArrayList();
 
 	public CSVHandler(Context current){
 		super();
@@ -57,6 +51,9 @@ public class CSVHandler {
 	}
 
 	/*
+	* Retourne une liste de coordonnées
+	* filename = le type enum du fichier à lire
+	* nbvalues = nombre de valeurs à random
 	* */
 	public ArrayList getRandom(fileName f, int nbvalues){
 		InputStream inputStream;
@@ -64,6 +61,8 @@ public class CSVHandler {
 			case CAPITAL: inputStream = context.getResources().openRawResource(R.raw.capital);
 				break;
 			case WORLD: inputStream = context.getResources().openRawResource(R.raw.worldcities);
+				break;
+			case BATIMENT: inputStream = context.getResources().openRawResource(R.raw.batiments);
 				break;
 			default: return null;
 		}
@@ -141,21 +140,5 @@ public class CSVHandler {
 		return resultList;
 	}
 
-	public List getWorld() {
-		return world;
-	}
-
-	public void setWorld() {
-		if (world.size() <= 0)this.world = get(fileName.WORLD);
-	}
-
-	public List getCapital() {
-		return capital;
-	}
-
-	public void setCapital(List CAPITAL) {
-
-		if (capital.size() <= 0) this.capital = get(fileName.CAPITAL);
-	}
 
 }
