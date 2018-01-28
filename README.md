@@ -67,8 +67,10 @@ Initialise la vue Google Street
 ## Options
 
 - [x] Rotation des écrans
-- [x] Persistence durable
+- [x] Persistence durable 
+- utilisation d'un fichier texte créer dans le répartoire de l'application, pour stocker le score après chaque essai, le contenu de fichier est preservé entre les différents ferméture-ouverture de l'application. au moment de l'affichage du score, le contenu du fichier sera charger et afficher sous forme d'une liste. pour les fragments, setRetainInstance(true) est appelée pour ne pas récréer le fragment au moment de la rotation.
 - [x] Partage du score
+- l'utilisateur peut partager son score depuis la liste des scores, par un click sur la ligne du score puis choix de l'application désirer au partage.
 - [x] Mode de jeu inversé
 
 ## Difficultés rencontrées
