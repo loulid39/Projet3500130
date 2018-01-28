@@ -213,8 +213,12 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         try{
             File gpxfile = new File(file, "scoreData.txt");
             FileWriter writer = new FileWriter(gpxfile,true);
+            if(reverse){
+                writer.append(score+"@"+level+" (r)@"+dat+"\n");
+            } else {
+                writer.append(score+"@"+level+"@"+dat+"\n");
+            }
 
-            writer.append(score+"@"+level+"@"+dat+"\n");
             writer.flush();
             writer.close();
         }catch (Exception e){

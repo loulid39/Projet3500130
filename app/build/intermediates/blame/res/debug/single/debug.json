@@ -392,10 +392,6 @@
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/res/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/layout_streatview.xml.flat",
-        "source": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/res/layout/streatview.xml"
-    },
-    {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-tvdpi_common_plus_signin_btn_text_dark_focused.9.png.flat",
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/play-services-base-8.4.0.aar/85c94470a428d50e8cadf47b8988f95b/res/drawable-tvdpi/common_plus_signin_btn_text_dark_focused.9.png"
     },
@@ -474,6 +470,10 @@
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pause_dark.png.flat",
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/8a1640d9b6367ef44dbd473121505727/res/drawable-xxhdpi/ic_pause_dark.png"
+    },
+    {
+        "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/layout_streetview.xml.flat",
+        "source": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/res/layout/streetview.xml"
     },
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_focused.9.png.flat",
@@ -3290,6 +3290,10 @@
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/lotfi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/483a1457d23a90da929fc24c7c850e90/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/raw_batiments.csv.flat",
+        "source": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/src/main/res/raw/batiments.csv"
     },
     {
         "merged": "/home/lotfi/AndroidStudioProjects/Projet3500130/app/build/intermediates/res/merged/debug/drawable-mdpi_places_ic_clear.png.flat",
