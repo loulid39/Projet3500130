@@ -149,7 +149,7 @@ public class mapView extends Fragment implements OnMapReadyCallback{
         initState();
     }
 
-    /* gestion de la camera*/
+    /* réinitialiser sur la map initial*/
     public void initState(){
         LatLng l = new LatLng(40.585106,25.2025836);
         map.moveCamera(CameraUpdateFactory.newLatLng(l));
